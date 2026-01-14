@@ -32,46 +32,52 @@
     </div>
   </section>
 
-  <!-- <section class="relative w-screen h-screen">
+  <!-- Filosofi -->
+  <section class="py-16 sm:py-20 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-10">
+        Brand & Produk Kami
+      </h2>
 
-    <video class="absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline>
+      <!-- Carousel -->
+      <div class="relative overflow-hidden">
+        <!-- Track -->
+        <div id="logoCarousel" class="flex transition-transform duration-700 ease-in-out">
+          <!-- Logo Perusahaan -->
+          <div class="min-w-full flex justify-center">
+            <img src="assets/logo-light.png" alt="Logo Perusahaan" class="h-24 sm:h-48 object-contain" />
+          </div>
+
+          <!-- Logo Produk 1 -->
+          <div class="min-w-full flex justify-center">
+            <img src="assets/icon-hang.png" alt="Logo Produk 1" class="h-24 sm:h-48 object-contain" />
+          </div>
+
+          <!-- Logo Produk 2 -->
+          <div class="min-w-full flex justify-center">
+            <img src="assets/icon-inung.png" alt="Logo Produk 2" class="h-24 sm:h-48 object-contain" />
+          </div>
+        </div>
+
+        <!-- Indicator -->
+        <div class="flex justify-center mt-8 gap-2">
+          <span class="dot w-3 h-3 rounded-full bg-amber-500"></span>
+          <span class="dot w-3 h-3 rounded-full bg-gray-300"></span>
+          <span class="dot w-3 h-3 rounded-full bg-gray-300"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Story -->
+  <section id="video-story" class="relative w-full min-h-[70vh] sm:min-h-[80vh] md:min-h-screen overflow-hidden">
+
+    <!-- Video -->
+    <video id="storyVideo" class="absolute inset-0 w-full h-full object-cover" muted loop playsinline preload="none">
       <source src="assets/hoeng.mp4" type="video/mp4" />
       Browser Anda tidak mendukung video.
     </video>
 
-    <div class="absolute inset-0 bg-black/40"></div>
-
-    <div class="relative z-10 flex items-center justify-center h-full px-6 text-center">
-      <div class="text-white max-w-3xl">
-        <img src="assets/logo-dark.png" class="mx-auto mb-6 w-48 sm:w-64" alt="Hoeng Logo" />
-
-        <h1 class="text-2xl sm:text-4xl md:text-5xl font-bold mb-6">
-          Cita Rasa Nusantara
-        </h1>
-
-        <p class="text-sm sm:text-lg mb-8">
-          Setiap sajian adalah cerita, setiap rasa adalah kebanggaan.
-        </p>
-
-        <a href="index.html"
-          class="inline-block bg-amber-500 hover:bg-amber-600 px-8 py-3 rounded-full font-semibold text-white">
-          Masuk ke Website
-        </a>
-      </div>
-    </div>
-
-  </section> -->
-
-  <!-- Filosofi -->
-  <section class="py-16 sm:py-20 bg-gray-50">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
-      <h2 class="text-2xl sm:text-3xl font-bold mb-6">Filosofi Kami</h2>
-      <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
-        Hoeng lahir dari kecintaan kami terhadap kekayaan kuliner Indonesia.
-        Kami percaya bahwa makanan bukan sekadar pengisi perut, tetapi juga sarana
-        untuk menyatukan cerita, budaya, dan kebahagiaan dalam setiap sajian.
-      </p>
-    </div>
   </section>
 
   <!-- Produk -->
@@ -115,7 +121,7 @@
   </section>
 
   <!-- Lokasi -->
-  <section class="py-16 sm:py-20 bg-gray-50">
+  <section class="py-16 sm:py-20 bg-[#ff9900] text-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10 sm:mb-12">
         Kunjungi Kami
@@ -132,7 +138,7 @@
           </p>
 
           <a href="https://www.openstreetmap.org/#map=17/-6.200000/106.816666" target="_blank"
-            class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-6 py-3 rounded-full font-semibold">
+            class="inline-block bg-white hover:bg-white text-black px-6 py-3 rounded-full font-semibold">
             Lihat Lokasi
           </a>
         </div>
@@ -156,11 +162,11 @@
       </p>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
-        <a href="#" class="border rounded-xl p-6 hover:shadow-lg transition">
+        <a href="#" class="border rounded-xl p-6 hover:shadow-lg transition bg-white">
           <img src="assets/Gofood_logo.svg" alt="GoFood" class="h-14 sm:h-16 mx-auto" />
         </a>
 
-        <a href="#" class="border rounded-xl p-6 hover:shadow-lg transition">
+        <a href="#" class="border rounded-xl p-6 hover:shadow-lg transition bg-white">
           <img src="assets/Tokopedia_Logo.png" alt="Tokopedia" class="h-14 sm:h-16 mx-auto" />
         </a>
       </div>
@@ -187,5 +193,40 @@
   </footer>
 
 </body>
+
+<script>
+  const video = document.getElementById('storyVideo');
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    },
+    {
+      threshold: 0.5 // 50% video terlihat baru play
+    }
+  );
+
+  observer.observe(video);
+
+  const carousel = document.getElementById("logoCarousel");
+  const dots = document.querySelectorAll(".dot");
+  let index = 0;
+  const total = 3;
+
+  setInterval(() => {
+    index = (index + 1) % total;
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("bg-amber-500", i === index);
+      dot.classList.toggle("bg-gray-300", i !== index);
+    });
+  }, 3000);
+</script>
+
 
 </html>
