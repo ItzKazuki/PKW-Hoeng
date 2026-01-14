@@ -5,10 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hoeng – Food & Beverage</title>
-  <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
-  <link rel="icon" href="/assets/favicon/favicon-32.png" sizes="32x32">
-  <link rel="icon" href="/assets/favicon/favicon-48.png" sizes="48x48">
-  <link rel="apple-touch-icon-precomposed" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" href="assets/favicon/favicon-32.png" sizes="32x32">
+  <link rel="icon" href="assets/favicon/favicon-48.png" sizes="48x48">
+  <link rel="apple-touch-icon-precomposed" href="assets/favicon/apple-touch-icon.png">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -17,21 +17,56 @@
   <!-- Hero -->
   <section class="bg-[url('https://images.unsplash.com/photo-1504674900247-0877df9cc836')] bg-cover bg-center">
     <div class="bg-black/60">
-      <div class="max-w-6xl mx-auto px-6 py-32 text-center text-white">
-        <!-- <h1 class="text-4xl md:text-6xl font-bold mb-6">Hoeng</h1> -->
-        <img src="assets/logo-dark.png" class="mx-auto mb-6 w-[50%]" alt="Hoeng Logo" />
-        <p class="text-lg md:text-xl mb-8">Menghadirkan Cita Rasa Nusantara dengan Kualitas Terbaik</p>
-        <a href="#produk" class="bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-full font-semibold">Lihat
-          Produk</a>
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-24 sm:py-32 text-center text-white">
+        <img src="assets/logo-dark.png" class="mx-auto mb-6 w-[70%] sm:w-[50%] md:w-[35%]" alt="Hoeng Logo" />
+
+        <p class="text-base sm:text-lg md:text-xl mb-8">
+          Menghadirkan Cita Rasa Nusantara dengan Kualitas Terbaik
+        </p>
+
+        <a href="#produk"
+          class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-full font-semibold">
+          Lihat Produk
+        </a>
       </div>
     </div>
   </section>
 
+  <!-- <section class="relative w-screen h-screen">
+
+    <video class="absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline>
+      <source src="assets/hoeng.mp4" type="video/mp4" />
+      Browser Anda tidak mendukung video.
+    </video>
+
+    <div class="absolute inset-0 bg-black/40"></div>
+
+    <div class="relative z-10 flex items-center justify-center h-full px-6 text-center">
+      <div class="text-white max-w-3xl">
+        <img src="assets/logo-dark.png" class="mx-auto mb-6 w-48 sm:w-64" alt="Hoeng Logo" />
+
+        <h1 class="text-2xl sm:text-4xl md:text-5xl font-bold mb-6">
+          Cita Rasa Nusantara
+        </h1>
+
+        <p class="text-sm sm:text-lg mb-8">
+          Setiap sajian adalah cerita, setiap rasa adalah kebanggaan.
+        </p>
+
+        <a href="index.html"
+          class="inline-block bg-amber-500 hover:bg-amber-600 px-8 py-3 rounded-full font-semibold text-white">
+          Masuk ke Website
+        </a>
+      </div>
+    </div>
+
+  </section> -->
+
   <!-- Filosofi -->
-  <section class="py-20 bg-gray-50">
-    <div class="max-w-5xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-6">Filosofi Kami</h2>
-      <p class="text-gray-600 leading-relaxed">
+  <section class="py-16 sm:py-20 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-6">Filosofi Kami</h2>
+      <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
         Hoeng lahir dari kecintaan kami terhadap kekayaan kuliner Indonesia.
         Kami percaya bahwa makanan bukan sekadar pengisi perut, tetapi juga sarana
         untuk menyatukan cerita, budaya, dan kebahagiaan dalam setiap sajian.
@@ -40,62 +75,114 @@
   </section>
 
   <!-- Produk -->
-  <section id="produk" class="py-20">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-12">Produk Unggulan</h2>
-      <div class="grid md:grid-cols-3 gap-8">
+  <section id="produk" class="py-16 sm:py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10 sm:mb-12">
+        Produk Unggulan
+      </h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
         <!-- Card -->
         <div class="border rounded-xl overflow-hidden shadow-sm">
-          <img src="https://images.unsplash.com/photo-1604909052743-94e838986d24" class="h-56 w-full object-cover" />
-          <div class="p-6">
-            <h3 class="font-semibold text-xl mb-2">Nasi Ayam Rempah</h3>
-            <p class="text-gray-600 mb-4">Perpaduan ayam empuk dan rempah pilihan khas nusantara.</p>
+          <div class="aspect-square w-full">
+            <img src="assets/produk.jpeg" class="w-full h-full object-cover" alt="Produk" />
+          </div>
+
+          <div class="p-5 sm:p-6">
+            <h3 class="font-semibold text-lg sm:text-xl mb-2">Jagung Titi</h3>
+            <p class="text-gray-600 mb-4 text-sm sm:text-base">
+              Kerenyahan di setiap gigitannya.
+            </p>
             <p class="font-bold text-amber-600">Rp25.000</p>
           </div>
         </div>
+
         <div class="border rounded-xl overflow-hidden shadow-sm">
-          <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe" class="h-56 w-full object-cover" />
-          <div class="p-6">
-            <h3 class="font-semibold text-xl mb-2">Mie Goreng Spesial</h3>
-            <p class="text-gray-600 mb-4">Mie goreng dengan racikan bumbu rahasia keluarga.</p>
-            <p class="font-bold text-amber-600">Rp22.000</p>
+          <div class="aspect-square w-full">
+            <img src="assets/produk.jpeg" class="w-full h-full object-cover" alt="Produk" />
           </div>
-        </div>
-        <div class="border rounded-xl overflow-hidden shadow-sm">
-          <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307" class="h-56 w-full object-cover" />
-          <div class="p-6">
-            <h3 class="font-semibold text-xl mb-2">Es Teh Rempah</h3>
-            <p class="text-gray-600 mb-4">Minuman segar dengan aroma rempah alami.</p>
-            <p class="font-bold text-amber-600">Rp8.000</p>
+
+          <div class="p-5 sm:p-6">
+            <h3 class="font-semibold text-lg sm:text-xl mb-2">Es Buah Lontar</h3>
+            <p class="text-gray-600 mb-4 text-sm sm:text-base">
+              Segar dan manis, perpaduan buah tropis yang menggoda.
+            </p>
+            <p class="font-bold text-amber-600">Rp22.000</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Promo -->
-  <section class="py-20 bg-amber-50">
-    <div class="max-w-5xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-6">Promo Spesial</h2>
-      <p class="text-gray-700 mb-6">Diskon 20% untuk pembelian pertama melalui WhatsApp!</p>
-      <span class="inline-block bg-amber-500 text-white px-6 py-3 rounded-full font-semibold">Kode: RASANUSA20</span>
+  <!-- Lokasi -->
+  <section class="py-16 sm:py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10 sm:mb-12">
+        Kunjungi Kami
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <!-- Alamat -->
+        <div class="text-center md:text-left">
+          <h3 class="text-lg sm:text-xl font-semibold mb-4">Alamat Toko</h3>
+          <p class="text-gray-700 mb-6 leading-relaxed text-sm sm:text-base">
+            Jl. Contoh Kuliner No. 12,<br />
+            Kecamatan Rasa, Kota Nusantara,<br />
+            Indonesia
+          </p>
+
+          <a href="https://www.openstreetmap.org/#map=17/-6.200000/106.816666" target="_blank"
+            class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-6 py-3 rounded-full font-semibold">
+            Lihat Lokasi
+          </a>
+        </div>
+
+        <!-- Map -->
+        <div class="w-full h-[260px] sm:h-[320px] md:h-[350px] rounded-xl overflow-hidden shadow">
+          <iframe class="w-full h-full border-0" loading="lazy"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=106.813%2C-6.203%2C106.820%2C-6.197&amp;layer=mapnik&amp;marker=-6.200000%2C106.816666">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order Online -->
+  <section class="py-16 sm:py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-6">Pesan Online</h2>
+      <p class="text-gray-600 mb-10 sm:mb-12 text-sm sm:text-base">
+        Nikmati menu Hoeng melalui platform pesan antar favorit Anda
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+        <a href="#" class="border rounded-xl p-6 hover:shadow-lg transition">
+          <img src="assets/Gofood_logo.svg" alt="GoFood" class="h-14 sm:h-16 mx-auto" />
+        </a>
+
+        <a href="#" class="border rounded-xl p-6 hover:shadow-lg transition">
+          <img src="assets/Tokopedia_Logo.png" alt="Tokopedia" class="h-14 sm:h-16 mx-auto" />
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- CTA WhatsApp -->
-  <section class="py-24 bg-gray-900 text-white">
-    <div class="max-w-5xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-6">Pesan Sekarang</h2>
-      <p class="mb-8">Hubungi kami melalui WhatsApp untuk pemesanan cepat dan mudah.</p>
-      <a href="https://wa.me/6281234567890?text=Halo%20RasaNusa,%20saya%20ingin%20memesan" target="_blank"
-        class="bg-green-500 hover:bg-green-600 px-8 py-4 rounded-full font-semibold text-lg">
+  <section class="py-20 sm:py-24 bg-gray-900 text-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-6">Pesan Sekarang</h2>
+      <p class="mb-8 text-sm sm:text-base">
+        Hubungi kami melalui WhatsApp untuk pemesanan cepat dan mudah.
+      </p>
+      <a href="https://wa.me/6281234567890" target="_blank"
+        class="inline-block bg-green-500 hover:bg-green-600 px-8 py-4 rounded-full font-semibold text-lg">
         Pesan via WhatsApp
       </a>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="py-6 text-center text-sm text-gray-500">
+  <footer class="py-6 text-center text-xs sm:text-sm text-gray-500">
     © 2026 Hoeng. All rights reserved.
   </footer>
 
