@@ -15,57 +15,41 @@
 <body class="bg-white text-gray-800">
 
   <!-- Hero -->
-  <section class="bg-[url('https://images.unsplash.com/photo-1504674900247-0877df9cc836')] bg-cover bg-center">
-    <div class="bg-black/60">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-24 sm:py-32 text-center text-white">
-        <img src="assets/logo-dark.png" class="mx-auto mb-6 w-[70%] sm:w-[50%] md:w-[35%]" alt="Hoeng Logo" />
+  <section
+    class="relative w-full min-h-screen bg-[url('https://images.unsplash.com/photo-1504674900247-0877df9cc836')] bg-cover bg-center">
 
-        <p class="text-base sm:text-lg md:text-xl mb-8">
-          Menghadirkan Cita Rasa Nusantara dengan Kualitas Terbaik
-        </p>
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/60"></div>
 
-        <a href="#produk"
-          class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-full font-semibold">
-          Lihat Produk
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Filosofi -->
-  <section class="py-16 sm:py-20 bg-gray-50">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
-      <h2 class="text-2xl sm:text-3xl font-bold mb-10">
-        Brand & Produk Kami
-      </h2>
+    <!-- Content -->
+    <div
+      class="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 text-center text-white">
 
       <!-- Carousel -->
-      <div class="relative overflow-hidden">
-        <!-- Track -->
-        <div id="logoCarousel" class="flex transition-transform duration-700 ease-in-out">
-          <!-- Logo Perusahaan -->
-          <div class="min-w-full flex justify-center">
-            <img src="assets/logo-light.png" alt="Logo Perusahaan" class="h-24 sm:h-48 object-contain" />
+      <div class="w-full max-w-4xl">
+        <div class="relative overflow-hidden">
+
+          <!-- Track -->
+          <div id="logoCarousel" class="flex transition-transform duration-700 ease-in-out">
+            <!-- Logo Perusahaan -->
+            <div class="min-w-full flex justify-center">
+              <img src="assets/logo-dark.png" alt="Logo Perusahaan" class="h-24 sm:h-full object-contain" />
+            </div>
+
+            <!-- Logo Produk 1 -->
+            <div class="min-w-full flex justify-center">
+              <img src="assets/icon-hang.png" alt="Logo Produk 1" class="h-24 sm:h-full object-contain" />
+            </div>
+
+            <!-- Logo Produk 2 -->
+            <div class="min-w-full flex justify-center">
+              <img src="assets/icon-inung.png" alt="Logo Produk 2" class="h-24 sm:h-full object-contain" />
+            </div>
           </div>
 
-          <!-- Logo Produk 1 -->
-          <div class="min-w-full flex justify-center">
-            <img src="assets/icon-hang.png" alt="Logo Produk 1" class="h-24 sm:h-48 object-contain" />
-          </div>
-
-          <!-- Logo Produk 2 -->
-          <div class="min-w-full flex justify-center">
-            <img src="assets/icon-inung.png" alt="Logo Produk 2" class="h-24 sm:h-48 object-contain" />
-          </div>
-        </div>
-
-        <!-- Indicator -->
-        <div class="flex justify-center mt-8 gap-2">
-          <span class="dot w-3 h-3 rounded-full bg-amber-500"></span>
-          <span class="dot w-3 h-3 rounded-full bg-gray-300"></span>
-          <span class="dot w-3 h-3 rounded-full bg-gray-300"></span>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -123,33 +107,52 @@
   <!-- Lokasi -->
   <section class="py-16 sm:py-20 bg-[#ff9900] text-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10 sm:mb-12">
-        Kunjungi Kami
-      </h2>
+
+      <!-- Header -->
+      <div class="text-center mb-12 sm:mb-16">
+        <h2 class="text-2xl sm:text-3xl font-bold">
+          Kunjungi Kami
+        </h2>
+        <p class="mt-3 text-white/80 text-sm sm:text-base">
+          Datang langsung ke lokasi kami atau temukan melalui peta
+        </p>
+      </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <!-- Alamat -->
         <div class="text-center md:text-left">
-          <h3 class="text-lg sm:text-xl font-semibold mb-4">Alamat Toko</h3>
-          <p class="text-gray-700 mb-6 leading-relaxed text-sm sm:text-base">
+
+          <!-- Logo Perusahaan -->
+          <img src="assets/logo-inverse.png" alt="Logo Hoeng" class="mx-auto md:mx-0 mb-6 h-16 sm:h-20 object-contain" />
+
+          <h3 class="text-lg sm:text-xl font-semibold mb-4">
+            Alamat Toko
+          </h3>
+
+          <p class="text-white/90 mb-6 leading-relaxed text-sm sm:text-base">
             Jl. Contoh Kuliner No. 12,<br />
             Kecamatan Rasa, Kota Nusantara,<br />
             Indonesia
           </p>
 
           <a href="https://www.openstreetmap.org/#map=17/-6.200000/106.816666" target="_blank"
-            class="inline-block bg-white hover:bg-white text-black px-6 py-3 rounded-full font-semibold">
-            Lihat Lokasi
+            class="inline-flex items-center gap-2 bg-white text-black hover:bg-black hover:text-white transition px-6 py-3 rounded-full font-semibold">
+            <span>Lihat Lokasi</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
           </a>
         </div>
 
         <!-- Map -->
-        <div class="w-full h-[260px] sm:h-[320px] md:h-[350px] rounded-xl overflow-hidden shadow">
+        <div class="w-full h-[260px] sm:h-[320px] md:h-[350px] rounded-2xl overflow-hidden shadow-xl">
           <iframe class="w-full h-full border-0" loading="lazy"
             src="https://www.openstreetmap.org/export/embed.html?bbox=106.813%2C-6.203%2C106.820%2C-6.197&amp;layer=mapnik&amp;marker=-6.200000%2C106.816666">
           </iframe>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -174,21 +177,21 @@
   </section>
 
   <!-- CTA WhatsApp -->
-  <section class="py-20 sm:py-24 bg-gray-900 text-white">
+  <section class="py-20 sm:py-24">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
       <h2 class="text-2xl sm:text-3xl font-bold mb-6">Pesan Sekarang</h2>
       <p class="mb-8 text-sm sm:text-base">
         Hubungi kami melalui WhatsApp untuk pemesanan cepat dan mudah.
       </p>
       <a href="https://wa.me/6281234567890" target="_blank"
-        class="inline-block bg-green-500 hover:bg-green-600 px-8 py-4 rounded-full font-semibold text-lg">
+        class="inline-block bg-green-700 hover:bg-green-800 text-white px-8 py-4 rounded-full font-semibold text-lg">
         Pesan via WhatsApp
       </a>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="py-6 text-center text-xs sm:text-sm text-gray-500">
+  <footer class="py-6 text-center text-xs sm:text-sm bg-gray-900 text-white">
     © 2026 Hoeng. All rights reserved.
   </footer>
 
