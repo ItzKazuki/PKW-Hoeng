@@ -10,20 +10,52 @@
   <link rel="icon" href="assets/favicon/favicon-48.png" sizes="48x48">
   <link rel="apple-touch-icon-precomposed" href="assets/favicon/apple-touch-icon.png">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
-<body class="bg-white text-gray-800">
+<body class="bg-[#e9edf6] text-gray-800">
+
+  <!-- Navbar -->
+  <nav id="heroNavbar" class="fixed top-0 left-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16 text-white">
+
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+          <img src="assets/logo-dark.png" alt="Hoeng" class="h-10">
+        </div>
+
+        <!-- Menu Desktop -->
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="#home" class="hover:text-[#ff9900] transition">Home</a>
+          <a href="#produk" class="hover:text-[#ff9900] transition">Produk</a>
+          <a href="#promo" class="hover:text-[#ff9900] transition">Promo</a>
+          <a href="#kontak" class="hover:text-[#ff9900] transition">Kontak</a>
+        </div>
+
+        <!-- CTA -->
+        <a href="https://wa.me/628xxxxxxxxxx"
+          class="hidden sm:inline-block px-4 py-2 rounded-full bg-[#ff9900] text-white text-sm font-semibold hover:bg-[#ffb84d] transition">
+          Pesan Sekarang
+        </a>
+
+      </div>
+    </div>
+  </nav>
 
   <!-- Hero -->
-  <section
-    class="relative w-full min-h-screen bg-[url('https://images.unsplash.com/photo-1504674900247-0877df9cc836')] bg-cover bg-center">
+  <section id="hero"
+    class="relative w-full min-h-screen pt-16 bg-[url('https://images.unsplash.com/photo-1504674900247-0877df9cc836')] bg-cover bg-center">
 
     <!-- Overlay -->
     <div class="absolute inset-0 bg-black/60"></div>
 
     <!-- Content -->
     <div
-      class="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 text-center text-white">
+      class="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 text-center text-[#e9edf6]">
 
       <!-- Carousel -->
       <div class="w-full max-w-4xl">
@@ -51,6 +83,7 @@
       </div>
 
     </div>
+    
   </section>
 
   <!-- Video Story -->
@@ -75,7 +108,7 @@
         <!-- Card -->
         <div class="border rounded-xl overflow-hidden shadow-sm">
           <div class="aspect-square w-full">
-            <img src="assets/produk.jpeg" class="w-full h-full object-cover" alt="Produk" />
+            <img src="assets/produkpkkwu/1.png" class="w-full h-full object-cover" alt="Produk" />
           </div>
 
           <div class="p-5 sm:p-6">
@@ -89,7 +122,7 @@
 
         <div class="border rounded-xl overflow-hidden shadow-sm">
           <div class="aspect-square w-full">
-            <img src="assets/produk.jpeg" class="w-full h-full object-cover" alt="Produk" />
+            <img src="assets/produkpkkwu/2.png" class="w-full h-full object-cover" alt="Produk" />
           </div>
 
           <div class="p-5 sm:p-6">
@@ -105,7 +138,7 @@
   </section>
 
   <!-- Lokasi -->
-  <section class="py-16 sm:py-20 bg-[#ff9900] text-white">
+  <section class="py-16 sm:py-20 bg-[#ff9900] text-[#e9edf6]">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
 
       <!-- Header -->
@@ -113,7 +146,7 @@
         <h2 class="text-2xl sm:text-3xl font-bold">
           Kunjungi Kami
         </h2>
-        <p class="mt-3 text-white/80 text-sm sm:text-base">
+        <p class="mt-3 text-[#e9edf6]/80 text-sm sm:text-base">
           Datang langsung ke lokasi kami atau temukan melalui peta
         </p>
       </div>
@@ -123,20 +156,21 @@
         <div class="text-center md:text-left">
 
           <!-- Logo Perusahaan -->
-          <img src="assets/logo-inverse.png" alt="Logo Hoeng" class="mx-auto md:mx-0 mb-6 h-16 sm:h-20 object-contain" />
+          <img src="assets/logo-inverse.png" alt="Logo Hoeng"
+            class="mx-auto md:mx-0 mb-6 h-16 sm:h-20 object-contain" />
 
           <h3 class="text-lg sm:text-xl font-semibold mb-4">
             Alamat Toko
           </h3>
 
-          <p class="text-white/90 mb-6 leading-relaxed text-sm sm:text-base">
+          <p class="text-[#e9edf6]/90 mb-6 leading-relaxed text-sm sm:text-base">
             Jl. Contoh Kuliner No. 12,<br />
             Kecamatan Rasa, Kota Nusantara,<br />
             Indonesia
           </p>
 
           <a href="https://www.openstreetmap.org/#map=17/-6.200000/106.816666" target="_blank"
-            class="inline-flex items-center gap-2 bg-white text-black hover:bg-black hover:text-white transition px-6 py-3 rounded-full font-semibold">
+            class="inline-flex items-center gap-2 bg-[#e9edf6] text-black hover:bg-black hover:text-[#e9edf6] transition px-6 py-3 rounded-full font-semibold">
             <span>Lihat Lokasi</span>
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">
@@ -165,33 +199,72 @@
       </p>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
-        <a href="#" class="border rounded-xl p-6 hover:shadow-lg transition bg-white">
-          <img src="assets/Gofood_logo.svg" alt="GoFood" class="h-14 sm:h-16 mx-auto" />
+        <a href="#" class="border rounded-xl p-6 hover:shadow-lg transition bg-[#e9edf6]">
+          <img src="assets/partner/Gofood_logo.svg" alt="GoFood" class="h-14 sm:h-16 mx-auto" />
         </a>
 
-        <a href="#" class="border rounded-xl p-6 hover:shadow-lg transition bg-white">
-          <img src="assets/Tokopedia_Logo.png" alt="Tokopedia" class="h-14 sm:h-16 mx-auto" />
+        <a href="#" class="border rounded-xl p-6 hover:shadow-lg transition bg-[#e9edf6]">
+          <img src="assets/partner/Tokopedia_Logo.png" alt="Tokopedia" class="h-14 sm:h-16 mx-auto" />
         </a>
       </div>
     </div>
   </section>
 
-  <!-- CTA WhatsApp -->
-  <section class="py-20 sm:py-24">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
-      <h2 class="text-2xl sm:text-3xl font-bold mb-6">Pesan Sekarang</h2>
-      <p class="mb-8 text-sm sm:text-base">
-        Hubungi kami melalui WhatsApp untuk pemesanan cepat dan mudah.
-      </p>
-      <a href="https://wa.me/6281234567890" target="_blank"
-        class="inline-block bg-green-700 hover:bg-green-800 text-white px-8 py-4 rounded-full font-semibold text-lg">
-        Pesan via WhatsApp
-      </a>
+  <!-- CTA -->
+  <section class="py-20 sm:py-24 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+        <!-- Kiri: Kontak -->
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-bold mb-4">Hubungi Kami</h2>
+          <p class="mb-6 text-sm sm:text-base text-gray-600">
+            Kami siap melayani pemesanan dan pertanyaan Anda melalui kontak berikut.
+          </p>
+
+          <ul class="space-y-4 text-sm sm:text-base text-gray-700">
+            <li class="flex items-center gap-4">
+              <i class="fa-solid fa-phone text-[#ff9900]"></i>
+              <span>+62 812-3456-7890</span>
+            </li>
+            <li class="flex items-center gap-4">
+              <i class="fa-solid fa-envelope text-[#ff9900]"></i>
+              <span>info@namabrand.com</span>
+            </li>
+            <li class="flex items-center gap-4">
+              <i class="fa-solid fa-location-dot text-[#ff9900]"></i>
+              <span>Jakarta, Indonesia</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Kanan: CTA WhatsApp -->
+        <div class="text-center">
+          <h3 class="text-xl sm:text-2xl font-semibold mb-3">
+            Pesan Sekarang
+          </h3>
+
+          <p class="mb-6 text-sm sm:text-base text-gray-600 max-w-md mx-auto">
+            Klik tombol di bawah untuk chat langsung dengan tim kami melalui WhatsApp.
+          </p>
+
+          <a href="https://wa.me/6281234567890" target="_blank"
+            class="inline-flex items-center justify-center gap-4 bg-[#ff9900] hover:bg-[#ff9100] text-[#e9edf6] px-8 py-4 rounded-full font-semibold text-lg transition shadow-lg">
+            <!-- Icon WhatsApp -->
+            <span class="flex items-center justify-center w-10 h-10 rounded-full bg-white/20">
+              <i class="fa-brands fa-whatsapp text-2xl"></i>
+            </span>
+
+            <span>Pesan via WhatsApp</span>
+          </a>
+        </div>
+
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="py-6 text-center text-xs sm:text-sm bg-gray-900 text-white">
+  <footer class="py-6 text-center text-xs sm:text-sm bg-[#ff9100] text-white">
     © 2026 Hoeng. All rights reserved.
   </footer>
 
@@ -214,6 +287,26 @@
   );
 
   observer.observe(video);
+
+  const navbar = document.getElementById('heroNavbar');
+  const hero = document.getElementById('hero');
+
+  const navbarObserver = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        navbar.classList.remove('opacity-0', 'pointer-events-none');
+        navbar.classList.add('opacity-100');
+      } else {
+        navbar.classList.add('opacity-0', 'pointer-events-none');
+        navbar.classList.remove('opacity-100');
+      }
+    },
+    {
+      threshold: 0.1
+    }
+  );
+
+  navbarObserver.observe(hero);
 
   const carousel = document.getElementById("logoCarousel");
   const dots = document.querySelectorAll(".dot");
