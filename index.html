@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8" />
@@ -46,92 +46,160 @@
   </nav>
 
   <!-- Hero -->
-  <section id="hero"
-    class="relative w-full min-h-screen pt-16 bg-[url('https://images.unsplash.com/photo-1504674900247-0877df9cc836')] bg-cover bg-center">
-
-    <!-- Overlay -->
+  <section id="home"
+    class="relative w-full min-h-screen flex items-center justify-center bg-[url('assets/header.png')] bg-cover bg-center">
     <div class="absolute inset-0 bg-black/60"></div>
 
-    <!-- Content -->
-    <div
-      class="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 text-center text-[#e9edf6]">
+    <div class="relative z-10 w-full max-w-5xl px-4 text-center text-[#e9edf6]">
+      <div
+        class="mb-6 inline-block px-4 py-1 rounded-full border border-amber-500 text-amber-500 text-sm font-semibold uppercase tracking-widest">
+        Kudapan Asli Nusantara
+      </div>
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+        Menghadirkan Keajaiban <br /> <span class="text-[#ff9900]">Rasa Tradisional</span>
+      </h1>
+      <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+        Hoeng mengolah bahan pilihan dari alam menjadi camilan premium yang menjaga warisan leluhur dalam setiap
+        gigitan.
+      </p>
 
-      <!-- Carousel -->
-      <div class="w-full max-w-4xl">
-        <div class="relative overflow-hidden">
-
-          <!-- Track -->
-          <div id="logoCarousel" class="flex transition-transform duration-700 ease-in-out">
-            <!-- Logo Perusahaan -->
-            <div class="min-w-full flex justify-center">
-              <img src="assets/logo-dark.png" alt="Logo Perusahaan" class="h-24 sm:h-full object-contain" />
-            </div>
-
-            <!-- Logo Produk 1 -->
-            <div class="min-w-full flex justify-center">
-              <img src="assets/icon-hang.png" alt="Logo Produk 1" class="h-24 sm:h-full object-contain" />
-            </div>
-
-            <!-- Logo Produk 2 -->
-            <div class="min-w-full flex justify-center">
-              <img src="assets/icon-inung.png" alt="Logo Produk 2" class="h-24 sm:h-full object-contain" />
-            </div>
+      <div class="w-full max-w-xl mx-auto overflow-hidden opacity-80">
+        <div id="logoCarousel" class="flex transition-transform duration-700 ease-in-out">
+          <div class="min-w-full flex justify-center"><img src="assets/logo-dark.png" class="h-16 object-contain" />
           </div>
-
+          <div class="min-w-full flex justify-center"><img src="assets/icon-hang.png" class="h-16 object-contain" />
+          </div>
+          <div class="min-w-full flex justify-center"><img src="assets/icon-inung.png" class="h-16 object-contain" />
+          </div>
         </div>
       </div>
-
     </div>
-    
   </section>
 
-  <!-- Video Story -->
-  <section id="video-story" class="relative w-full min-h-[70vh] sm:min-h-[80vh] md:min-h-screen overflow-hidden">
+  <section id="tentang" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+      <div>
+        <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4 text-[#ff9900]">
+          <i class="fa-solid fa-leaf text-2xl"></i>
+        </div>
+        <h3 class="font-bold text-lg mb-2">Bahan Alami</h3>
+        <p class="text-gray-600 text-sm">Dipilih langsung dari petani lokal untuk menjamin kesegaran setiap hari.</p>
+      </div>
+      <div>
+        <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4 text-[#ff9900]">
+          <i class="fa-solid fa-mortar-pestle text-2xl"></i>
+        </div>
+        <h3 class="font-bold text-lg mb-2">Resep Autentik</h3>
+        <p class="text-gray-600 text-sm">Diolah dengan metode tradisional untuk mempertahankan rasa asli daerah.</p>
+      </div>
+      <div>
+        <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4 text-[#ff9900]">
+          <i class="fa-solid fa-shield text-2xl"></i>
+        </div>
+        <h3 class="font-bold text-lg mb-2">Tanpa Pengawet</h3>
+        <p class="text-gray-600 text-sm">Camilan sehat yang aman dikonsumsi seluruh keluarga kapan saja.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Video -->
-    <video id="storyVideo" class="absolute inset-0 w-full h-full object-cover" muted loop playsinline preload="none">
+  <section id="video-story" class="relative w-full h-screen overflow-hidden bg-black">
+    <video id="storyVideo" class="absolute inset-0 w-full h-full object-cover" muted loop playsinline autoplay
+      preload="auto">
       <source src="assets/hoeng.mp4" type="video/mp4" />
       Browser Anda tidak mendukung video.
     </video>
 
+    <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/60"></div>
+
+    <div class="relative z-10 flex flex-col items-center justify-end h-full pb-20 text-center px-4">
+      <a href="#produk" class="animate-bounce mb-4">
+        <i class="fa-solid fa-chevron-down text-white text-2xl opacity-50"></i>
+      </a>
+      <p class="text-white/80 tracking-[0.2em] uppercase text-xs sm:text-sm font-light">
+        Sentuhan Tradisi dalam Setiap Detail
+      </p>
+    </div>
   </section>
 
-  <!-- Produk -->
-  <section id="produk" class="py-16 sm:py-20">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10 sm:mb-12">
-        Produk Unggulan
-      </h2>
+  <section id="produk" class="py-16 md:py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-        <!-- Card -->
-        <div class="border rounded-xl overflow-hidden shadow-sm">
-          <div class="aspect-square w-full">
-            <img src="assets/produkpkkwu/1.png" class="w-full h-full object-cover" alt="Produk" />
-          </div>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Produk Unggulan</h2>
+        <div class="w-20 h-1 bg-[#ff9900] mx-auto mb-4 rounded-full"></div>
+        <p class="text-gray-600 max-w-md mx-auto text-sm md:text-base">
+          Pilih favoritmu dan rasakan sensasi kelezatan autentik dari bahan-bahan pilihan kami.
+        </p>
+      </div>
 
-          <div class="p-5 sm:p-6">
-            <h3 class="font-semibold text-lg sm:text-xl mb-2">Jagung Titi</h3>
-            <p class="text-gray-600 mb-4 text-sm sm:text-base">
-              Kerenyahan di setiap gigitannya.
-            </p>
-            <p class="font-bold text-amber-600">Rp25.000</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
+
+        <div
+          class="group relative overflow-hidden rounded-[2rem] shadow-xl bg-white aspect-[4/5] sm:aspect-[3/4] lg:aspect-square transition-all duration-500 hover:-translate-y-2">
+          <img src="assets/produkpkkwu/jagung.png"
+            class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Jagung Titi" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent flex flex-col justify-end p-6 md:p-10 opacity-0 group-hover:opacity-100 transition-all duration-500">
+            <div class="translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+              <div class="flex gap-2 mb-3">
+                <span
+                  class="bg-[#ff9900] text-white text-[10px] uppercase tracking-widest px-3 py-1 rounded-full font-bold">
+                  Camilan
+                </span>
+
+                <span
+                  class="bg-white/20 backdrop-blur-md border border-white/30 text-white text-[10px] uppercase tracking-widest px-3 py-1 rounded-full font-bold">
+                  Netto: 500g
+                </span>
+              </div>
+              <h3 class="text-2xl md:text-3xl font-bold text-white mb-2">Jagung Titi</h3>
+              <p class="text-gray-300 mb-6 text-sm md:text-base leading-relaxed">
+                Jagung geprek khas NTT yang gurih dan super renyah. Diolah tradisional tanpa minyak berlebih.
+              </p>
+              <div class="flex justify-between items-center border-t border-white/20 pt-4">
+                <span class="text-[#ff9900] text-xl md:text-2xl font-extrabold">Rp25.000</span>
+                <button
+                  class="bg-white text-black px-6 py-2.5 rounded-full font-bold hover:bg-[#ff9900] hover:text-white transition shadow-lg active:scale-95">
+                  Order <i class="fa-brands fa-whatsapp ml-2"></i>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="border rounded-xl overflow-hidden shadow-sm">
-          <div class="aspect-square w-full">
-            <img src="assets/produkpkkwu/2.png" class="w-full h-full object-cover" alt="Produk" />
-          </div>
+        <div
+          class="group relative overflow-hidden rounded-[2rem] shadow-xl bg-white aspect-[4/5] sm:aspect-[3/4] lg:aspect-square transition-all duration-500 hover:-translate-y-2">
+          <img src="assets/produkpkkwu/LONTAR.png"
+            class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Es Buah Lontar" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent flex flex-col justify-end p-6 md:p-10 opacity-0 group-hover:opacity-100 transition-all duration-500">
+            <div class="translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+              <div class="flex gap-2 mb-3">
+                <span
+                  class="bg-[#ff9900] text-white text-[10px] uppercase tracking-widest px-3 py-1 rounded-full font-bold">
+                  Minuman Segar
+                </span>
 
-          <div class="p-5 sm:p-6">
-            <h3 class="font-semibold text-lg sm:text-xl mb-2">Es Buah Lontar</h3>
-            <p class="text-gray-600 mb-4 text-sm sm:text-base">
-              Segar dan manis, perpaduan buah tropis yang menggoda.
-            </p>
-            <p class="font-bold text-amber-600">Rp22.000</p>
+                <span
+                  class="bg-white/20 backdrop-blur-md border border-white/30 text-white text-[10px] uppercase tracking-widest px-3 py-1 rounded-full font-bold">
+                  Netto: 250g
+                </span>
+              </div>
+              <h3 class="text-2xl md:text-3xl font-bold text-white mb-2">Es Buah Lontar</h3>
+              <p class="text-gray-300 mb-6 text-sm md:text-base leading-relaxed">
+                Kesegaran buah lontar pilihan dengan sirup spesial yang melegakan dahaga di cuaca tropis.
+              </p>
+              <div class="flex justify-between items-center border-t border-white/20 pt-4">
+                <span class="text-[#ff9900] text-xl md:text-2xl font-extrabold">Rp22.000</span>
+                <button
+                  class="bg-white text-black px-6 py-2.5 rounded-full font-bold hover:bg-[#ff9900] hover:text-white transition shadow-lg active:scale-95">
+                  Order <i class="fa-brands fa-whatsapp ml-2"></i>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -189,6 +257,113 @@
     </div>
   </section>
 
+  <section id="review" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div class="max-w-xl">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Apa Kata Mereka?</h2>
+          <p class="text-gray-600">Cerita nyata dari pelanggan setia yang telah menikmati kelezatan Hoeng.</p>
+        </div>
+        <div class="flex items-center gap-2 bg-amber-50 px-4 py-2 rounded-2xl border border-amber-100">
+          <div class="flex text-amber-500">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="font-bold text-gray-800">4.9/5.0</span>
+          <span class="text-gray-400 text-sm">(500+ Review)</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+
+        <div
+          class="bg-gray-50 p-8 rounded-[2rem] border border-transparent hover:border-amber-200 transition-all duration-300 group">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-12 h-12 bg-amber-200 rounded-full flex items-center justify-center font-bold text-amber-700">
+              S
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-900 leading-none mb-1">Siti Aminah</h4>
+              <p class="text-xs text-gray-500 tracking-wide uppercase">Pembeli Terverifikasi</p>
+            </div>
+          </div>
+          <div class="flex text-amber-500 text-xs mb-4">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-gray-700 leading-relaxed italic">
+            "Jagung Titi-nya juara! Kriuknya beda banget sama jagung goreng biasa, lebih ringan dan gak berminyak. Cocok
+            banget buat nemenin ngeteh sore-sore."
+          </p>
+        </div>
+
+        <div class="bg-[#ff9900] p-8 rounded-[2rem] shadow-xl shadow-amber-200 transform md:-translate-y-4">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center font-bold text-[#ff9900]">
+              B
+            </div>
+            <div>
+              <h4 class="font-bold text-white leading-none mb-1">Budi Santoso</h4>
+              <p class="text-xs text-white/70 tracking-wide uppercase">Pembeli Terverifikasi</p>
+            </div>
+          </div>
+          <div class="flex text-white text-xs mb-4">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-white leading-relaxed font-medium italic">
+            "Es Buah Lontarnya seger banget parah! Lontarnya lembut dan sirupnya gak bikin serik di tenggorokan.
+            Pengiriman ke Jakarta juga aman dan tetap dingin."
+          </p>
+        </div>
+
+        <div
+          class="bg-gray-50 p-8 rounded-[2rem] border border-transparent hover:border-amber-200 transition-all duration-300">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-12 h-12 bg-amber-200 rounded-full flex items-center justify-center font-bold text-amber-700">
+              R
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-900 leading-none mb-1">Riana Putri</h4>
+              <p class="text-xs text-gray-500 tracking-wide uppercase">Pembeli Terverifikasi</p>
+            </div>
+          </div>
+          <div class="flex text-amber-500 text-xs mb-4">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-gray-700 leading-relaxed italic">
+            "Awalnya coba-coba karena liat kemasannya rapi, eh ternyata ketagihan. Udah order 3x buat stok cemilan di
+            kantor. Sukses terus Hoeng!"
+          </p>
+        </div>
+
+      </div>
+
+      <div class="mt-12 text-center">
+        <p class="text-sm text-gray-500 mb-4">Lihat ulasan lainnya di platform kami:</p>
+        <div class="flex justify-center gap-6 grayscale opacity-60 hover:grayscale-0 transition-all">
+          <i class="fa-brands fa-google text-2xl"></i>
+          <i class="fa-brands fa-instagram text-2xl"></i>
+          <i class="fa-brands fa-tiktok text-2xl"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Order Online -->
   <section class="py-16 sm:py-20">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
@@ -198,11 +373,11 @@
       </p>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
-        <a href="#" class="border rounded-xl p-6 hover:shadow-lg transition bg-[#e9edf6]">
+        <a href="#" class="border rounded-xl p-6 hover:shadow-lg transition bg-white">
           <img src="assets/partner/Gofood_logo.svg" alt="GoFood" class="h-14 sm:h-16 mx-auto" />
         </a>
 
-        <a href="#" class="border rounded-xl p-6 hover:shadow-lg transition bg-[#e9edf6]">
+        <a href="#" class="border rounded-xl p-6 hover:shadow-lg transition bg-white">
           <img src="assets/partner/Tokopedia_Logo.png" alt="Tokopedia" class="h-14 sm:h-16 mx-auto" />
         </a>
       </div>
@@ -210,52 +385,76 @@
   </section>
 
   <!-- CTA -->
-  <section id="kontak" class="py-20 sm:py-24 bg-gray-50">
+  <section id="kontak" class="py-16 sm:py-24 bg-gray-50 border-t border-gray-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
 
-        <!-- Kiri: Kontak -->
-        <div>
-          <h2 class="text-2xl sm:text-3xl font-bold mb-4">Hubungi Kami</h2>
-          <p class="mb-6 text-sm sm:text-base text-gray-600">
-            Kami siap melayani pemesanan dan pertanyaan Anda melalui kontak berikut.
+        <div class="flex flex-col justify-center">
+          <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-gray-900 uppercase tracking-tight">
+            Hubungi Kami
+          </h2>
+          <p class="mb-8 text-gray-600 leading-relaxed max-w-md">
+            Kami siap melayani pemesanan, pertanyaan produk, atau kemitraan melalui saluran komunikasi di bawah ini.
           </p>
 
-          <ul class="space-y-4 text-sm sm:text-base text-gray-700">
-            <li class="flex items-center gap-4">
-              <i class="fa-solid fa-phone text-[#ff9900]"></i>
-              <span>+62 812-3456-7890</span>
-            </li>
-            <li class="flex items-center gap-4">
-              <i class="fa-solid fa-envelope text-[#ff9900]"></i>
-              <span>info@namabrand.com</span>
-            </li>
-            <li class="flex items-center gap-4">
-              <i class="fa-solid fa-location-dot text-[#ff9900]"></i>
-              <span>Jakarta, Indonesia</span>
-            </li>
-          </ul>
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <i class="fa-solid fa-phone text-[#ff9900] mt-1"></i>
+              <div>
+                <p class="text-[10px] uppercase font-bold text-gray-400 tracking-widest mb-1">Telepon/WhatsApp</p>
+                <p class="text-gray-800">+62 812-3456-7890</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <i class="fa-solid fa-envelope text-[#ff9900] mt-1"></i>
+              <div>
+                <p class="text-[10px] uppercase font-bold text-gray-400 tracking-widest mb-1">Email</p>
+                <p class="text-gray-800">info@hoeng.com</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <i class="fa-solid fa-location-dot text-[#ff9900] mt-1"></i>
+              <div>
+                <p class="text-[10px] uppercase font-bold text-gray-400 tracking-widest mb-1">Lokasi</p>
+                <p class="text-gray-800">Jakarta, Indonesia</p>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- Kanan: CTA WhatsApp -->
-        <div class="text-center">
-          <h3 class="text-xl sm:text-2xl font-semibold mb-3">
-            Pesan Sekarang
-          </h3>
+        <div class="flex flex-col justify-center bg-white p-8 sm:p-10 rounded-xl border border-gray-200 shadow-sm">
 
-          <p class="mb-6 text-sm sm:text-base text-gray-600 max-w-md mx-auto">
-            Klik tombol di bawah untuk chat langsung dengan tim kami melalui WhatsApp.
-          </p>
+          <div class="space-y-4">
+            <a href="https://wa.me/6281234567890" target="_blank"
+              class="flex items-center justify-between bg-[#25D366] hover:bg-[#1da851] text-white px-6 py-4 rounded-lg transition-all group">
+              <div class="flex items-center gap-3">
+                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                <span class="font-bold">WhatsApp Order</span>
+              </div>
+              <i
+                class="fa-solid fa-arrow-right opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0"></i>
+            </a>
 
-          <a href="https://wa.me/6281234567890" target="_blank"
-            class="inline-flex items-center justify-center gap-4 bg-[#ff9900] hover:bg-[#ff9100] text-[#e9edf6] px-8 py-4 rounded-full font-semibold text-lg transition shadow-lg">
-            <!-- Icon WhatsApp -->
-            <span class="flex items-center justify-center w-10 h-10 rounded-full bg-white/20">
-              <i class="fa-brands fa-whatsapp text-2xl"></i>
-            </span>
+            <a href="#" target="_blank"
+              class="flex items-center justify-between border border-gray-300 hover:border-gray-900 text-gray-700 hover:text-gray-900 px-6 py-4 rounded-lg transition-all group">
+              <div class="flex items-center gap-3">
+                <i class="fa-brands fa-instagram text-2xl"></i>
+                <span class="font-bold">Instagram</span>
+              </div>
+              <i
+                class="fa-solid fa-arrow-right opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0"></i>
+            </a>
 
-            <span>Pesan via WhatsApp</span>
-          </a>
+            <a href="#" target="_blank"
+              class="flex items-center justify-between border border-gray-300 hover:border-gray-900 text-gray-700 hover:text-gray-900 px-6 py-4 rounded-lg transition-all group">
+              <div class="flex items-center gap-3">
+                <i class="fa-brands fa-tiktok text-2xl"></i>
+                <span class="font-bold">TikTok</span>
+              </div>
+              <i
+                class="fa-solid fa-arrow-right opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0"></i>
+            </a>
+          </div>
         </div>
 
       </div>
@@ -288,7 +487,7 @@
   observer.observe(video);
 
   const navbar = document.getElementById('heroNavbar');
-  const hero = document.getElementById('hero');
+  const hero = document.getElementById('home');
 
   const navbarObserver = new IntersectionObserver(
     ([entry]) => {
